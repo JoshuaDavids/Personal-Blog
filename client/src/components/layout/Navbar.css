@@ -1,0 +1,61 @@
+:root {
+  --red: #f02424;
+  --header: #302e4d;
+  --text: #504e70;
+  --back: #fdf9ff;
+  --body: #f2f2fc;
+  --plain: #ffffff;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--back);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.nav .container {
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+.nav h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding: 1px 7px 1px 7px;
+  color: var(--header);
+}
+.nav h1::before {
+  content: "";
+  height: 0.6rem;
+  width: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid var(--red);
+  border-left: 4px solid var(--red);
+}
+.nav h1::after {
+  content: "";
+  height: 0.6rem;
+  width: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 4px solid var(--red);
+  border-bottom: 4px solid var(--red);
+}
+.nav .link a {
+  margin: 0 8px;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+}
+.nav .link a:hover {
+  color: var(--red);
+}
