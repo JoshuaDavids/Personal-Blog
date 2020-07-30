@@ -7,6 +7,12 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+  --red: #f02424;
+  --header: #302e4d;
+  --text: #504e70;
+  --back: #fdf9ff;
+  --body: #f2f2fc;
+  --plain: #ffffff;
 }
 
 * {
@@ -22,20 +28,6 @@ body {
   line-height: 1.6;
   background-color: #ecf0f1;
   color: #333;
-}
-:root {
-  --red: #f02424;
-  --header: #302e4d;
-  --text: #504e70;
-  --back: #fdf9ff;
-  --body: #f2f2fc;
-  --plain: #ffffff;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
 }
 
 ul {
@@ -554,16 +546,16 @@ table th {
   }
 
   /* Navbar */
-  .navbar {
+  .nav {
     display: block;
     text-align: center;
   }
 
-  .navbar h1 {
+  .nav h1 {
     margin-bottom: 0.6rem;
   }
 
-  .navbar ul {
+  .nav ul {
     text-align: center;
     justify-content: center;
   }

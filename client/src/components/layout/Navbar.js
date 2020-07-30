@@ -24,7 +24,7 @@ const Navbar = ({ title }) => {
           <div className="logo">
             <h1>{title}</h1>
           </div>
-          <div className="links">
+          <li className="links">
             <Link to="/">Home</Link>
             <Link to="/about-me">About</Link>
             <Link to="/posts">Posts</Link>
@@ -33,7 +33,7 @@ const Navbar = ({ title }) => {
               <i className="fas fa-sign-out-alt"></i>
               <span className="text">Logout</span>
             </Link>
-          </div>
+          </li>
         </div>
       </nav>
     </Fragment>
