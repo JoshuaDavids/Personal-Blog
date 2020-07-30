@@ -1,17 +1,18 @@
 {
-  "name": "contact-keeper",
+  "name": "personal-blog",
   "version": "1.0.0",
-  "description": "Contact Manger App",
+  "description": "Joshua's Personal Blog App",
   "main": "server.js",
   "scripts": {
-    "start:": "server.js",
+    "start:": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clientinsall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Joshua Davids",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
