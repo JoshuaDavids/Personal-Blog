@@ -6,7 +6,7 @@ const PostList = () => {
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
-    const post = await axios.get("joshuadavids.herokuapp.com/posts/");
+    const post = await axios.get("http://localhost:5000/posts/");
     setPosts(post.data);
   };
 

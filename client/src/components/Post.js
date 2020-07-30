@@ -8,7 +8,7 @@ const Post = (props) => {
 
   const getPost = async () => {
     const res = await axios.get(
-      `joshuadavids.herokuapp.com/posts/post/${props.match.params.id}`
+      `http://localhost:5000/posts/post/${props.match.params.id}`
     );
     setPost(res.data);
   };
