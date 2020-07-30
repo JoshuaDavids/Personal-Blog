@@ -7,7 +7,9 @@ const Post = (props) => {
   const [post, setPost] = useState();
 
   const getPost = async () => {
-    const res = await axios.get(`/posts/post/${props.match.params.id}`);
+    const res = await axios.get(
+      `joshuadavids.herokuapp.com/posts/post/${props.match.params.id}`
+    );
     setPost(res.data);
   };
 
