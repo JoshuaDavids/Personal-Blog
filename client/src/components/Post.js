@@ -7,9 +7,7 @@ const Post = (props) => {
   const [post, setPost] = useState();
 
   const getPost = async () => {
-    const res = await axios.get(
-      `http://localhost:5000/posts/post/${props.match.params.id}`
-    );
+    const res = await axios.get(`/posts/post/${props.match.params.id}`);
     setPost(res.data);
   };
 

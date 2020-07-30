@@ -10,6 +10,7 @@ const connectDB = async () => {
       if (err) return console.error(err);
     }
   );
+
   try {
     await mongoose.connect(db, {
       useNewUrlParser: true,
