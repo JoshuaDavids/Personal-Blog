@@ -11,16 +11,14 @@ const AlertState = (props) => {
 
   // Set Alert
   const setAlert = (msg, type, timeout = 5000) => {
-    const _id = uuidv4();
+    const id = uuidv4();
     dispatch({
       type: SET_ALERT,
-      payload: { msg, type, _id },
+      payload: { msg, type, id },
     });
 
-    setTimeout(() => dispatch({ type: REMOVE_ALERT, payload: _id }), timeout);
+    setTimeout(() => dispatch({ type: REMOVE_ALERT, payload: id }), timeout);
   };
-
-  // Register User
 
   return (
     <AlertContext.Provider
